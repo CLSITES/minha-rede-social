@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Minha Rede Social</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
 
-<h1>Minha Rede Social</h1>
+<header class="topo">
+  <h2>Minha Rede Social</h2>
+</header>
 
+<nav class="menu">
+  <button onclick="mostrarTela('feed')">🏠 Feed</button>
+  <button onclick="mostrarTela('postar')">➕ Postar</button>
+  <button onclick="mostrarTela('perfil')">👤 Perfil</button>
+</nav>
+
+<!-- LOGIN -->
 <div id="auth">
   <input type="email" id="email" placeholder="Email">
   <input type="password" id="password" placeholder="Senha">
@@ -17,22 +19,29 @@
   <button onclick="login()">Entrar</button>
 </div>
 
+<!-- APP -->
 <div id="app" style="display:none">
-  <h3>Nova postagem</h3>
-  <input type="file" id="image">
-  <br><br>
-  <button onclick="postImage()">Postar</button>
-  <hr>
-  <h3>Feed</h3>
-  <div id="feed"></div>
+
+  <!-- POSTAR -->
+  <div id="tela-postar" class="tela">
+    <h3>Nova postagem</h3>
+    <input type="file" id="image">
+    <br><br>
+    <button onclick="postImage()">Postar</button>
+  </div>
+
+  <!-- FEED -->
+  <div id="tela-feed" class="tela">
+    <h3>Feed</h3>
+    <div id="feed"></div>
+  </div>
+
+  <!-- PERFIL -->
+  <div id="tela-perfil" class="tela">
+    <h3>Meu perfil</h3>
+    <p>Aqui vai sua bio, posts, etc.</p>
+  </div>
+
 </div>
 
-<!-- Firebase -->
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
-
-<script src="script.js"></script>
 </body>
-</html>
