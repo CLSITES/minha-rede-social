@@ -44,7 +44,7 @@ firebaseAuth.onAuthStateChanged(user => {
   if (user) {
     authDiv.style.display = "none";
     appDiv.style.display = "block";
-    loadFeed();
+    mostrarTela("feed");
   }
 });
 
@@ -74,4 +74,12 @@ function loadFeed() {
       feedDiv.appendChild(img);
     });
   });
+}
+
+function mostrarTela(nome) {
+  document.querySelectorAll(".tela").forEach(t => t.style.display = "none");
+
+  if (nome === "feed") document.getElementById("tela-feed").style.display = "block";
+  if (nome === "postar") document.getElementById("tela-postar").style.display = "block";
+  if (nome === "perfil") document.getElementById("tela-perfil").style.display = "block";
 }
