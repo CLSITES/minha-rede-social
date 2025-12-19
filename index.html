@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Rede Social</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Minha Rede Social</h1>
+
+<div id="auth">
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Senha">
+  <br>
+  <button onclick="register()">Cadastrar</button>
+  <button onclick="login()">Entrar</button>
+</div>
+
+<div id="app" style="display:none">
+  <h3>Nova postagem</h3>
+  <input type="file" id="image">
+  <br><br>
+  <button onclick="postImage()">Postar</button>
+  <hr>
+  <h3>Feed</h3>
+  <div id="feed"></div>
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
