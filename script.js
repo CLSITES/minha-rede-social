@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: "COLE_AQUI",
-  authDomain: "COLE_AQUI",
-  projectId: "COLE_AQUI",
-  storageBucket: "COLE_AQUI",
-  messagingSenderId: "COLE_AQUI",
-  appId: "COLE_AQUI"
+  apiKey: "AIzaSyCibPIyt2ke5bS7uz-rlDihVqUxOh9OQJc",
+  authDomain: "minha-rede-social-ccf8d.firebaseapp.com",
+  projectId: "minha-rede-social-ccf8d",
+  storageBucket: "minha-rede-social-ccf8d.firebasestorage.app",
+  messagingSenderId: "164222245470",
+  appId: "1:164222245470:web:56638419c5f0c8db26f2cf"
 };
 
 firebase.initializeApp(firebaseConfig);
