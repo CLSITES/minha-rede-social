@@ -1,17 +1,40 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   background: #fafafa;
+}
+
+.topo {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
   text-align: center;
 }
 
-input, button {
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
   padding: 10px;
-  margin: 5px;
+}
+
+.menu button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tela {
+  display: none;
+  padding: 20px;
+  text-align: center;
 }
 
 #feed img {
   width: 300px;
   margin: 10px auto;
   display: block;
-  border-radius: 6px;
+  border-radius: 8px;
 }
